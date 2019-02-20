@@ -1,29 +1,22 @@
 # testcafe-example
+A working example for problems using role and nock. 
 
-## Project setup
+## Set up the project
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
+## Run the test
 ```
 npm run test
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+You will see a long delay executing the role after page load, this is the output running on Ubuntu: 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+Main Page
+Creating story mock request
+Call to nock took 9.197799682617188 milliseconds.
+Creating role
+Call to create role took 32411.24609708786 milliseconds.
+looking for list selector
+```

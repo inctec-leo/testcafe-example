@@ -5,9 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "testcafe chrome $(find test/ -name '*test.?s') --app \"npm run serve >/dev/null 2>&1\" --app-init-delay 10000 -S -s screenshots"
   },
   "dependencies": {
+    "nock": "^10.0.6",
+    "testcafe": "^1.0.1",
     "vue": "^2.6.6"
   },
   "devDependencies": {
